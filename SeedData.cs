@@ -24,6 +24,21 @@ namespace IndyBooks
             //  TODO: Create two additional books in the seed data 
             //         drop and then update the database using ef
             //
+
+            context.Books.Add(new Book
+            {
+                Title = "The Bible",
+                Author = "?",
+                Price = 10000.99M,
+                Year = "0000"
+            });
+            context.Books.Add(new Book
+            {
+                Title = "The Dictionary",
+                Author = "Webster",
+                Price = 0.00M,
+                Year = "0000"
+            });
             context.Books.Add(new Book
             {
                 Title = "Pride and Prejudice",
@@ -83,7 +98,7 @@ namespace IndyBooks
             });
             context.Books.Add(new Book
             {
-                Title = " Oedipus at Colonus",
+                Title = "Oedipus at Colonus",
                 Author = "Franz Kafka",
                 Edition = "",
                 Price = 14.00M,
@@ -155,7 +170,7 @@ namespace IndyBooks
             });
             context.Books.Add(new Book
             {
-                Title = " Oedipus at Colonus",
+                Title = "Oedipus at Colonus",
                 Author = "Rachel Hollis",
                 Edition = "",
                 Price = 69.00M,
@@ -251,7 +266,7 @@ namespace IndyBooks
             });
             context.Books.Add(new Book
             {
-                Title = " Oedipus at Colonus",
+                Title = "Oedipus at Colonus",
                 Author = "Alexander Pushkin",
                 Edition = "",
                 Price = 52.00M,
