@@ -8,6 +8,8 @@ namespace IndyBooks.ViewModels
         public decimal MinPrice { get; set; }
         public decimal MaxPrice { get; set; }
 
+        public string SortBy { get; set; }
+
         //TODO: Add properties needed for searching
     }
 }

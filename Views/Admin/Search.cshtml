@@ -18,6 +18,13 @@
     <div>
         Max Price: <input asp-for="MaxPrice" />
     </div>
+    <div>
+        Order By: 
+        <select asp-for="SortBy">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+        </select>    
+    </div>
 
     <!-- TODO: Add fields needed for seraching -->
     <div>

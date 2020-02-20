@@ -45,7 +45,15 @@ namespace IndyBooks.Controllers
                 foundBooks = foundBooks
                             .Where(b => b.Price <= search.MaxPrice);
 
-            return View("SearchResults", foundBooks.OrderBy(b => b.Title));
+            if ("title" == search.SortBy)
+            {
+                foundBooks = foundBooks.OrderBy(b => b.Title);
+            } else if ("author" == search.SortBy)
+            {
+                foundBooks = foundBooks.OrderBy(b => b.Author);
+            }
+
+            return View("SearchResults", foundBooks);
         }
     }
 }
