@@ -7,7 +7,7 @@ namespace IndyBooks.Models
     {
         public IndyBooksDataContext(DbContextOptions<IndyBooksDataContext> options) : base(options)
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
 
         //Access to Collections representing DB tables

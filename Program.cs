@@ -26,7 +26,7 @@ namespace IndyBooks
                 try
                 {
                     SeedData.InitializeAsync(services).Wait();
-                }
+                }   
                 catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();

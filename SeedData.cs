@@ -865,6 +865,22 @@ namespace IndyBooks
                 Price = 30.00M,
                 Year = "1994"
             });
+            context.Books.Add(new Book
+            {
+                Title = "The BFG",
+                Author = "Roald Dahl",
+                Edition = "1",
+                Price = 15.00M,
+                Year = "1990"
+            });
+            context.Books.Add(new Book
+            {
+                Title = "Test",
+                Author = "BIT285",
+                Edition = "1",
+                Price = 50.00M,
+                Year = "2020"
+            });
 
 
             await context.SaveChangesAsync();
