@@ -17,7 +17,7 @@
         <th>Year</th>
     </tr>
 
-    @foreach (var book in Model.FoundBooks)
+    @foreach (var book in Model.FoundBooks.OrderByDescending(b => b.Price))
     {
         <tr>
             <td>
@@ -39,7 +39,7 @@
     }
     @if(Model.HalfPriceSale)
         { //TODO: Use Sum method and lambda selector on the FoundBooks Collection to display the total sale price
-            <tr><td colspan="4" align="right"><b>Total Sale Price:</b>
+            <tr><td colspan="4" align="right"><b>Total Sale Price: @Model.FoundBooks.Sum(b => b.Price) </b>
 
                 </td></tr>
         }

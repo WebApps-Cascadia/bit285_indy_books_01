@@ -21,6 +21,20 @@ namespace IndyBooks
             var Books = new Book[] {
                 new Book
                 {
+                    Title = "The Wolf and the Maggot",
+                    Author = "Noah Ku",
+                    Price = 10.99M,
+                    Year = "2023"
+                },
+                new Book
+                {
+                    Title = "Diary of a Wimpy Kid",
+                    Author = "Jeff Kinney",
+                    Price = 15.99M,
+                    Year = "2005"
+                },
+                new Book
+                {
                     Title = "Pride and Prejudice",
                     Author = "Jane Austin",
                     Price = 9.99M,
