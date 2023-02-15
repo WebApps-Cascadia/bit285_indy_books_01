@@ -859,6 +859,22 @@ namespace IndyBooks
                     Edition = "1",
                     Price = 30.00M,
                     Year = "1994"
+                },
+                new Book
+                {
+                    Title = "Harry Potter and the Sorcerer's Stone",
+                    Author = "J.K. Rowling",
+                    Edition = "",
+                    Price = 6.98M,
+                    Year = "1997"
+                },
+                new Book
+                {
+                    Title = "Harry Potter and the Chamber of Secrets",
+                    Author = "J.K. Rowling",
+                    Edition = "",
+                    Price = 6.98M,
+                    Year = "1998"
                 }
             };
 
