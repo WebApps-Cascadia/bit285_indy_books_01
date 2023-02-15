@@ -854,6 +854,22 @@ namespace IndyBooks
                 },
                 new Book
                 {
+                    Title = "A Million Little Pieces of Bubblegum",
+                    Author = "Regus Arnold",
+                    Edition = "1",
+                    Price = 16.00M,
+                    Year = "2005"
+                },
+                new Book
+                {
+                    Title = "Happy Babies",
+                    Author = "Angry Barbara",
+                    Edition = "2",
+                    Price = 10.00M,
+                    Year = "2010"
+                },
+                new Book
+                {
                     Title = "The Good Soldier",
                     Author = "Oscar Wilde",
                     Edition = "1",
