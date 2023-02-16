@@ -56,13 +56,10 @@ namespace IndyBooks.Controllers
             //       You only need to include the Title, Author, and sale price in the projection
             if (searchVM.HalfPriceSale)
             {
-                var halfOffPrice = foundBooks.Where(b => b.Price >= 90)
-                                             .Select(b => new { Title = b.Title, Author = b.Author, Price = b.Price / 2 });
+                foundBooks = foundBooks.Where(b => b.Price >= 90)
+                                             .Select(b => new Book{ Title = b.Title, Author = b.Author, Price = b.Price / 2 });
 
-                //foreach(var book in halfOffPrice)
-                //{
-                //    foundBooks = foundBooks.Where(b => b.Price < 90).Append(book);
-                //}
+                
                 
 
             }
