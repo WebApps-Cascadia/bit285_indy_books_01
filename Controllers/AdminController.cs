@@ -30,6 +30,7 @@ namespace IndyBooks.Controllers
                 //Filter the collection by Title which "contains" the given string
                 foundBooks = foundBooks
                              .Where(b => b.Title.Contains(searchVM.Title));
+                               .OrderBy(b => b.Title(searchVM )); //Coundn't manage to get this stuff to work
                 // TODO: Order the results by Title
             }
 
@@ -63,6 +64,11 @@ namespace IndyBooks.Controllers
             };
 
             return View("SearchResults", searchResults );
+        }
+
+        private void OrderBy(Func<object, object> value)
+        {
+            throw new NotImplementedException();
         }
     }
 }
