@@ -8,7 +8,7 @@ builder.Services.AddMvc();
 //TODO: Initialize the DBC Service for your particular OS
 var connection = builder.Configuration.GetConnectionString("IndyBooks-Mac-Sqlite");
 builder.Services.AddDbContext<IndyBooks.Models.IndyBooksDataContext>(options =>
-    options.UseSqlite(connection));
+    options.UseSqlServer(connection));
 
 var app = builder.Build();
 

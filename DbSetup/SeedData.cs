@@ -859,6 +859,22 @@ namespace IndyBooks
                     Edition = "1",
                     Price = 30.00M,
                     Year = "1994"
+                },
+                new Book
+                {
+                    Title = "The Legend of Zoldo",
+                    Author = "Nin Terndo",
+                    Edition = "2",
+                    Price = 19.85M,
+                    Year = "1985"
+                },
+                new Book
+                {
+                    Title = "Mertroid",
+                    Author = "Nin Terndo",
+                    Edition = "1",
+                    Price = 19.86M,
+                    Year = "1986"
                 }
             };
 
